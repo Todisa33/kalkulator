@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Unesite broj A");
+        var znak = prompt ("Unesite znak operacije");
+        var b = prompt ("Unesite broj B");
+        var r;
+
+        if (znak == "+") {
+            r= parseInt(a)+parseInt(b);
+        }else if (znak =="-") {
+            r=a-b;
+        }else if (znak =="*"){
+            r=a*b;
+        }else if (znak =="/"){
+            if (b != 0){
+                r=a/b;
+            }
+            else {
+                r = "beskonacan";    
+            }
+        }
+        else{
+            r = "nepostojeci"
+        }
+
+        alert("Rezultat je " +r);
+    
+        
+    </script>
+</body>
+</html>
